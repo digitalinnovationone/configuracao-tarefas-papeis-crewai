@@ -8,7 +8,7 @@ Olá novamente! Sejam bem-vindos à Aula 2 do nosso curso "Configuração de Tar
 
 **Revisão Rápida: O que é um Agente (Agent)?**
 
-Antes de tudo, vamos relembrar brevemente o **Agente**. Em CrewAI, um **Agente é a entidade autônoma** que faz parte da sua "tripulação" (Crew). Ele é o "quem" do seu projeto. Pense nele como um **membro especializado de uma equipe**, como um "Pesquisador de Dados" ou um "Analista de Conteúdo".
+Antes de tudo, vamos relembrar brevemente o **Agente**. Em CrewAI, um **Agente é a entidade autônoma** que faz parte da sua "tripulação" (Crew). Ele é o "quem" do seu projeto. Pense nele como um **membro especializado de uma equipe**, como um "Especialista em Didática" ou um "Criador de Exercícios".
 
 Um agente, para ser eficaz, precisa de algumas características, como um **Papel**, um **Objetivo** e, opcionalmente, uma **História de Fundo** que o guie. Além disso, ele pode ter **Ferramentas** para interagir com o mundo externo, como ferramentas de busca na internet ou acesso a APIs.
 
@@ -17,7 +17,7 @@ Um agente, para ser eficaz, precisa de algumas características, como um **Papel
 Agora, vamos entender o **Papel**. O Papel define a **função ou a responsabilidade específica** que um agente assume dentro da equipe. Ele é a "especialidade" do seu agente.
 
 *   Um papel **dá contexto ao agente**, influenciando como ele pensa, raciocina e interage para cumprir suas tarefas.
-*   **Exemplos de papéis:** "Gerente de Projetos", "Editor de Conteúdo", "Especialista em Marketing Digital".
+*   **Exemplos de papéis:** "Especialista em Didática para Iniciantes", "Criador de Exercícios Práticos", "Revisor de Conteúdo Educacional".
 
 A distinção é crucial: **o papel é quem o agente "é" e o que ele representa na equipe**. Ele é a identidade funcional do agente.
 
@@ -45,10 +45,50 @@ A verdadeira força do CrewAI está na **colaboração entre esses elementos**.
 
 É como uma orquestra: cada músico (Agente) tem um instrumento e uma especialidade (Papel), e todos tocam as notas certas (Tarefas) sob a batuta do maestro (Processo) para criar uma sinfonia (o resultado final).
 
-## Conteúdo Prático (Projeto Hands-On: Explorando Tarefas e Papéis no Setor de Tecnologia)
+## Conteúdo Prático (Projeto Hands-On: Criando Nosso Primeiro Projeto Educacional)
 
-> TODO
+**Objetivo da Prática:** Criar a estrutura básica de um projeto CrewAI educacional, definindo nosso primeiro agente especializado em didática para iniciantes em TI.
 
-**Recapitulando:** Nesta aula, você deu um passo crucial: **compreendeu a diferença entre Agente (quem), Papel (qual a função) e Tarefa (o quê fazer)**. Além disso, você **criou a estrutura básica do seu primeiro projeto CrewAI** em seu ambiente local (ou no Colab) e **definiu seu primeiro Agente ("Pesquisador de Mercado") e sua primeira Tarefa ("Pesquisa de Mercado")**. Essa base é fundamental para que possamos começar a dar vida aos nossos agentes!
+**Duração Estimada:** 15 minutos
 
-Na próxima aula, vamos aprofundar na **configuração das Tarefas**, adicionando parâmetros e objetivos claros, e então, finalmente, **executar nosso primeiro agente** para ver esses conceitos em ação.
+### O Que Vamos Construir
+
+Nesta aula prática, vamos criar um projeto educacional onde agentes trabalham juntos para produzir conteúdo didático. Nossa visão é ter:
+- **Agente 1:** Especialista em resumir tópicos complexos de TI de forma didática para iniciantes
+- **Agente 2:** Criador de exercícios práticos (que criaremos na Aula 4)
+
+Hoje focaremos apenas no primeiro agente para manter a simplicidade.
+
+### Estrutura do Projeto
+
+**1. Configuração do Ambiente**
+- Criar pasta do projeto
+- Instalar dependências básicas (`crewai`, `python-dotenv`)
+- Estruturar arquivos (`main.py`, `agents.py`, `tasks.py`)
+
+**2. Definindo Nosso Primeiro Agente**
+- Papel: "Especialista em Didática para TI"
+- Objetivo: Transformar conceitos técnicos em explicações acessíveis
+- História de fundo: Professor experiente em simplificar tecnologia
+
+**3. Criando Nossa Primeira Tarefa**
+- Descrição: Criar resumo didático de um tópico de TI
+- Parâmetro: `{topic}` (tópico a ser explicado)
+- Expected Output: Texto em markdown explicando o conceito de forma simples
+
+**4. Estrutura Básica da Crew**
+- Definir crew com nosso agente
+- Configurar processo sequencial
+- Preparar para execução (sem executar ainda)
+
+### Pontos de Aprendizado
+
+Durante a prática, vamos destacar:
+- Como um papel influencia o comportamento do agente
+- A importância de descrições claras nas tarefas
+- Como parâmetros tornam tarefas reutilizáveis
+- Diferença entre local e remoto (Google Colab)
+
+**Recapitulando:** Nesta aula, você compreendeu a **diferença fundamental entre Agente (quem), Papel (qual função) e Tarefa (o quê fazer)**. Além disso, criou a **estrutura base do seu projeto educacional** com o primeiro agente especializado em didática. Essa base é fundamental para as próximas aulas onde executaremos e expandiremos nosso projeto!
+
+Na próxima aula, vamos **refinar este agente e sua tarefa**, executar nosso primeiro teste e entender como conectar um LLM para dar "inteligência" ao nosso agente.
