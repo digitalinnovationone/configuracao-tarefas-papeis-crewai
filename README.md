@@ -30,7 +30,7 @@ Conquistas:
 
 Durante o curso, todas as práticas foram organizadas em um notebook interativo no Google Colab. Você pode executar os códigos diretamente do seu navegador, sem precisar instalar nada:
 
-[![Abrir no Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/18RnBIaLQwPnIqfECIQqpJ5x6HLp8C5VD?usp=sharing)
+[![Abrir no Google Colab](https://colab.research.google.com/drive/1Eci8NMe70HNfTg_V4VWvx-OXWBuedxdK?usp=sharing)
 
 Na prática, desenvolvemos o seguinte projeto de Agentes Inteligentes neste curso:
 
